@@ -4,10 +4,11 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const fs = require("fs");
 const app = express();
-const port = 4000; 
 const cors  = require("cors");
 const authRouter = require("./routers/auth");
 const todoRouter = require("./routers/todo");
+const env = require("dotenv");
+env.config();
 app.use(cors({
     origin:"http://localhost:3000"
 }));
@@ -56,10 +57,10 @@ app.use((err, req, res, next) => {
 
 
 
-    app.listen(port, () => {
-        mongoose.connect("mongodb+srv://Manage_data:data08@cluster0.vqlwp77.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+    app.listen(process.env.port, () => {
+        mongoose.connect(process.env.MongoDB)
             .then(() => {
-                console.log(`Server is running with DB on ${port}`);
+                console.log("Server is running with DB ");
             }).catch((error) => {
                 console.log(error);
             })

@@ -1,7 +1,7 @@
  express = require("express");
 const router = express.Router();
 const {createTodo,getAllTodo,updateTodo,DeleteTodo} = require("../controllers/todo");
-
+const verifyAuth = require("../middleware/verifyAuth");
 
 
 
@@ -10,10 +10,9 @@ router.get('/',(req,res) => {
 });
 
 
-router.post("/create",createTodo);
+router.post("/create", verifyAuth, createTodo);
 router.get("/all",getAllTodo);
-//router.get("/view/:jobnumber",getTodoById);
-router.patch("/update/:jobnumber",updateTodo);
+router.patch("/update/:jobnumber",verifyAuth,updateTodo);
 router.delete('/delete/:jobnumber',DeleteTodo);
 
 module.exports = router;

@@ -47,7 +47,7 @@ const LoginAuth = async (req, res, next) => {
       return res.status(400).send("Invalid email or password");
     }
     // todo move secret to env
-    const token = jwt.sign({ authId: auth._id }, "secret", {
+    const token = jwt.sign({ authId: auth._id }, process.env.Secret_key, {
       expiresIn: "240h",
     });
     res.status(200).json({

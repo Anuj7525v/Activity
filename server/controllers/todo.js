@@ -25,20 +25,7 @@ const getAllTodo = async (req, res, next) => {
         next(error);
     }
 };
-/*const getTodoById = async (req, res, next) => {
-    try {
-        const { id } = req.params;
-        const todo = await Todo.findById(id);
-        if (!todo) {
-            return res.status(404).send("Todo not found");
-        }
-        res.status(200).send(todo);
-    }
-    catch (error) {
-        next(error)
-    }
 
-}; */
 const updateTodo = async (req, res, next) => {
     try {
         const { id } = req.params;

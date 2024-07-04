@@ -1,9 +1,10 @@
 import axios from 'axios';
+import { BACKEND_URL } from '../constant';
 
 export const createTodo = async (tododata) => {
     try {
         const response = await axios.post(
-            "http://localhost:4000/api/todo/create", tododata, {
+            `${BACKEND_URL}/api/todo/create`, tododata, {
             headers: {
                 "Content-Type": "application/json",
                 authorization: `${localStorage.getItem("token")}`,
@@ -20,7 +21,7 @@ export const createTodo = async (tododata) => {
 export const allTodo = async () => {
     try {
         const response = await axios.get(
-            "http://localhost:4000/api/todo/all"
+            `${BACKEND_URL}/api/todo/all`
         );
         return response;
     }
@@ -30,7 +31,7 @@ export const allTodo = async () => {
 export const updateTodo = async (id, tododata) => {
     try {
         const response = await axios.patch(
-            `http://localhost:4000/api/todo/update/${id}`, tododata, {
+            `${BACKEND_URL}/api/todo/update/${id}`, tododata, {
             headers: {
                 "Content-Type": "application/json",
                 authorization: `${localStorage.getItem("token")}`,
@@ -45,7 +46,7 @@ export const updateTodo = async (id, tododata) => {
 export const deleteTodo = async (id, tododata) => {
     try {
         const response = await axios.delete(
-            `http://localhost:4000/api/todo/delete/${id}`, tododata
+            `${BACKEND_URL}/api/todo/delete/${id}`, tododata
         );
         return response;
     }

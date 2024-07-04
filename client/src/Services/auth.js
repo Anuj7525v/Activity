@@ -1,9 +1,11 @@
 import axios from "axios";
+import {BACKEND_URL} from "../constant";
+
 
 export const signup = async (data) => {
     try {
         const response = await axios.post(
-            "http://localhost:4000/api/auth/signup", data);
+            `${BACKEND_URL}/api/auth/signup`, data);
         return response;
     }
     catch(error){
@@ -15,7 +17,7 @@ export const signup = async (data) => {
 export const login = async (data) => {
     try {
         const response = await axios.post(
-            "http://localhost:4000/api/auth/login", data);
+            `${BACKEND_URL}/api/auth/login`, data);
         return response;
     }
     catch(error){
@@ -26,7 +28,7 @@ export const login = async (data) => {
 export const  updatepassword = async (data) =>{
     try {
         const response = await axios.patch(
-            "http://localhost:4000/api/auth/updatepassword", data);
+            `${BACKEND_URL}/api/auth/updatepassword`, data);
         return response;
     }
     catch(error){

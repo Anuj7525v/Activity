@@ -1,0 +1,135 @@
+.page{
+    width: 30wh;
+    height: 75vh;
+    border-radius: 15px;
+
+}
+.Header{
+    display: flex;
+   
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 10px;
+    
+
+}
+.Header p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.btn{
+   width: auto;
+   
+}
+.btn button{
+   all: unset;
+   font-size: 1.4rem;
+   padding: 0px 10px;
+}
+
+.modal{
+    border: 1px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top:4rem;
+    left: 16rem;
+    width: 52vw;
+    height: 80vh;
+    background: white;
+    border-radius:15px;
+    padding: 5px 15px;
+}
+.Head p{
+    font-size: 1em;
+    font-weight:500 ;
+}
+.Head input{
+    width: 50vw;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    border-radius:10px ;
+    outline: none;
+    border: 2px solid rgb(182, 179, 179);
+}
+.middle{
+    display: flex;
+    align-items: center;
+   
+   
+}
+.middle p{
+    font-size: 1em;
+    font-weight:500 ;
+    padding-right: 12px;
+
+}
+.priority button{
+    all: unset;
+   border: 1px solid rgb(185, 181, 181);
+   margin: 0px 8px;
+   padding:  0px 5px;
+   color: rgb(176, 171, 171);
+  
+}
+.checkbox p{
+    font-size: 1em;
+    font-weight:500 ;
+
+}
+.add{
+    all: unset;
+   
+    color: rgb(186, 183, 183);
+}
+.part{
+    height:60vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+.date{
+    all: unset;
+    border: 2px solid rgb(229, 226, 226);
+    padding: 3px 10px;
+    color: rgb(186, 184, 184);
+   border-radius:5px ;
+   margin: 0px 0rem 1rem 0em;
+
+}
+
+   
+
+.btn2 button{
+    all: unset;
+   font-size: 1.2rem;
+    margin: 0px 0rem 1rem 1em;
+    padding: 3px 1.5rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+    text-align: center;
+    
+    
+    
+}
+.btn2 .cancel{
+    border: 1px solid red;
+    color: red;
+}
+.btn2 .save{
+    background:rgb(24, 171, 229);
+    border: 1px solid rgb(32, 169, 223);
+    color: white;
+    
+}

@@ -1,0 +1,65 @@
+.page{
+    height: 100vh;   
+}
+.Header{
+    flex-shrink: 0;   
+}
+.ontop{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+.onbottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px; 
+}
+.board{ font-size: 500;
+}
+
+.main{
+    display: flex;
+    flex-grow: 1;
+    overflow-x:auto;
+
+
+}
+.box{
+    
+   display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap:20px ; 
+    
+   
+   
+    
+   
+
+}
+.backlog{
+    width: 30vw;
+    
+   height: 75vh;
+   margin-left: 20px;
+   border-radius: 15px;
+   background: #EEF2F5;
+    
+}
+.todo{ width: 30vw;
+   height: 75vh;
+   border-radius: 15px;
+   background: #EEF2F5;
+}
+.inProgress{
+    width: 30vw;
+    background: #EEF2F5;
+   height: 75vh;
+   border-radius: 15px;
+}
+.done{
+    width: 30vw;
+    background: #EEF2F5;
+   height: 75vh;
+   border-radius: 15px;
+}

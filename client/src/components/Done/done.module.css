@@ -1,0 +1,29 @@
+.page{
+    width: 30wh;
+    height: 75vh;
+    border-radius: 15px;
+
+}
+.Header{
+    display: flex;
+   
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 10px;
+    
+
+}
+.Header p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.btn{
+   width: auto;
+   
+}
+.btn button{
+   all: unset;
+   font-size: 1.4rem;
+   padding: 0px 10px;
+}

@@ -1,0 +1,98 @@
+POST /api/auth/login 8:17:47 PMMongooseError: Operation `auths.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (D:\cuttvue\Activity\server\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+POST /api/auth/login 8:34:02 PMError [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:652:11)
+    at ServerResponse.header (D:\cuttvue\Activity\server\node_modules\express\lib\response.js:795:10)
+    at ServerResponse.send (D:\cuttvue\Activity\server\node_modules\express\lib\response.js:175:12)
+    at LoginAuth (D:\cuttvue\Activity\server\controllers\auth.js:42:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+POST /api/auth/login 8:35:46 PMError: secretOrPrivateKey must have a value
+    at module.exports [as sign] (D:\cuttvue\Activity\server\node_modules\jsonwebtoken\sign.js:111:20)
+    at LoginAuth (D:\cuttvue\Activity\server\controllers\auth.js:48:25)
+POST /api/auth/login 8:37:06 PMReferenceError: SECRET is not defined
+    at LoginAuth (D:\cuttvue\Activity\server\controllers\auth.js:48:51)
+POST /api/auth/login 8:37:12 PMReferenceError: SECRET is not defined
+    at LoginAuth (D:\cuttvue\Activity\server\controllers\auth.js:48:51)
+POST /api/auth/login 9:01:06 PMReferenceError: SECRET is not defined
+    at LoginAuth (D:\cuttvue\Activity\server\controllers\auth.js:48:51)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+POST /api/auth/login 9:03:31 PMReferenceError: SECRET is not defined
+    at LoginAuth (D:\cuttvue\Activity\server\controllers\auth.js:48:51)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+POST /api/auth/login 9:06:24 PMError: data and hash arguments required
+    at Object.compare (D:\cuttvue\Activity\server\node_modules\bcrypt\bcrypt.js:208:17)
+    at D:\cuttvue\Activity\server\node_modules\bcrypt\promises.js:29:12
+    at new Promise (<anonymous>)
+    at module.exports.promise (D:\cuttvue\Activity\server\node_modules\bcrypt\promises.js:20:12)
+    at Object.compare (D:\cuttvue\Activity\server\node_modules\bcrypt\bcrypt.js:204:25)
+    at LoginAuth (D:\cuttvue\Activity\server\controllers\auth.js:43:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+POST /api/auth/login 9:06:43 PMError: data and hash arguments required
+    at Object.compare (D:\cuttvue\Activity\server\node_modules\bcrypt\bcrypt.js:208:17)
+    at D:\cuttvue\Activity\server\node_modules\bcrypt\promises.js:29:12
+    at new Promise (<anonymous>)
+    at module.exports.promise (D:\cuttvue\Activity\server\node_modules\bcrypt\promises.js:20:12)
+    at Object.compare (D:\cuttvue\Activity\server\node_modules\bcrypt\bcrypt.js:204:25)
+    at LoginAuth (D:\cuttvue\Activity\server\controllers\auth.js:43:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+POST /api/auth/login 9:09:24 PMReferenceError: SECRET is not defined
+    at LoginAuth (D:\cuttvue\Activity\server\controllers\auth.js:49:51)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+POST /api/auth/login 9:09:26 PMReferenceError: SECRET is not defined
+    at LoginAuth (D:\cuttvue\Activity\server\controllers\auth.js:49:51)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+POST /api/auth/login 9:09:26 PMReferenceError: SECRET is not defined
+    at LoginAuth (D:\cuttvue\Activity\server\controllers\auth.js:49:51)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+POST /api/auth/login 9:12:22 PMError: data and hash arguments required
+    at Object.compare (D:\cuttvue\Activity\server\node_modules\bcrypt\bcrypt.js:208:17)
+    at D:\cuttvue\Activity\server\node_modules\bcrypt\promises.js:29:12
+    at new Promise (<anonymous>)
+    at module.exports.promise (D:\cuttvue\Activity\server\node_modules\bcrypt\promises.js:20:12)
+    at Object.compare (D:\cuttvue\Activity\server\node_modules\bcrypt\bcrypt.js:204:25)
+    at LoginAuth (D:\cuttvue\Activity\server\controllers\auth.js:44:44)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+GET /api/auth/signup 2:03:26 PM
+GET /favicon.ico 2:03:28 PM
+GET /api/auth/signup 2:03:36 PM
+GET /api/todo/create 3:32:44 PM
+GET /api/todo/create 3:33:47 PM
+POST /api/todo/create 3:34:16 PMReferenceError: dueDate is not defined
+    at createTodo (D:\cuttvue\Activity\server\controllers\todo.js:10:61)
+    at Layer.handle [as handle_request] (D:\cuttvue\Activity\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cuttvue\Activity\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cuttvue\Activity\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cuttvue\Activity\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\cuttvue\Activity\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\cuttvue\Activity\server\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cuttvue\Activity\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\cuttvue\Activity\server\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\cuttvue\Activity\server\node_modules\express\lib\router\index.js:47:12)
+POST /api/todo/create 3:35:33 PMReferenceError: dueDate is not defined
+    at createTodo (D:\cuttvue\Activity\server\controllers\todo.js:10:61)
+    at Layer.handle [as handle_request] (D:\cuttvue\Activity\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cuttvue\Activity\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cuttvue\Activity\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cuttvue\Activity\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\cuttvue\Activity\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\cuttvue\Activity\server\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cuttvue\Activity\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\cuttvue\Activity\server\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\cuttvue\Activity\server\node_modules\express\lib\router\index.js:47:12)
+PATCH /api/todo/update/667be828c17f275835a20640 3:44:54 PMTypeError: Cannot read properties of null (reading 'title')
+    at updateTodo (D:\cuttvue\Activity\server\controllers\todo.js:48:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+PATCH /api/todo/update/:667be828c17f275835a20640 3:45:24 PMTypeError: Cannot read properties of null (reading 'title')
+    at updateTodo (D:\cuttvue\Activity\server\controllers\todo.js:48:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+PATCH /api/todo/update/:667be828c17f275835a20640?ckecklist=data 3:53:56 PMTypeError: Cannot read properties of null (reading 'title')
+    at updateTodo (D:\cuttvue\Activity\server\controllers\todo.js:47:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+PATCH /api/todo/update/:667be828c17f275835a20640?ckecklist=data 3:54:44 PMTypeError: Cannot read properties of null (reading 'priority')
+    at updateTodo (D:\cuttvue\Activity\server\controllers\todo.js:48:53)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+PATCH /api/todo/update/:667be828c17f275835a20640?ckecklist=data 3:54:46 PMTypeError: Cannot read properties of null (reading 'priority')
+    at updateTodo (D:\cuttvue\Activity\server\controllers\todo.js:48:53)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
